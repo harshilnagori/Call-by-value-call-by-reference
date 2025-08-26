@@ -1,0 +1,24 @@
+// Harshil Nagori 
+// 24070123046
+
+// Ishika Singhal
+// PRN : 24070123048
+
+#include <iostream>
+using namespace std;
+ void swap(int x, int y){
+        int temp=x;
+        x=y;
+        y=temp;
+        return ;
+    }
+
+int main() {
+    int a=5; int b=2;
+    swap(a,b);
+    cout<<"a is:"<<a<<endl;
+    
+    cout<<"b is:"<<b<<endl;
+
+    return 0;
+}
