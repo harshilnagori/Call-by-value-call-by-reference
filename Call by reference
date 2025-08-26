@@ -1,0 +1,25 @@
+// Harshil Nagori 
+// 24070123046
+
+#include <iostream>
+using namespace std;
+ void swap(int &x, int &y){
+        int temp=x;
+        x=y;
+        y=temp;
+        return ;
+    }
+
+int main() {
+    int a=12; int b=21;
+    
+    cout<<"Original value of a is:"<<a<<endl;
+    
+    cout<<"original value of b is:"<<b<<endl;
+    swap(a,b);
+    cout<<"Swapped value of a is:"<<a<<endl;
+    
+    cout<<"Swapped value of b is:"<<b<<endl;
+
+    return 0;
+}
