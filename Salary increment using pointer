@@ -1,0 +1,48 @@
+// Harshil Nagori
+// 24070123046
+
+#include <iostream>
+using namespace std;
+
+int selection(int x, int y, int z, int w) {
+    int count = 0;
+    if (x > 0) count++;
+    if (y > 0) count++;
+    if (z > 100000) count++; 
+    if (w > 0) count++;
+    return count;
+}
+
+int main() {
+    int Recent_project;
+    int Recent_publications;
+    int Profit;
+    int New_Project;
+    float salary, increment;
+
+    cout << "Enter the number of recent projects: ";
+    cin >> Recent_project;
+
+    cout << "How many research publications have you done? ";
+    cin >> Recent_publications;
+
+    cout << "How much profit have you made in last one year? ";
+    cin >> Profit;
+
+    cout << "Enter the number of new projects in pipeline: ";
+    cin >> New_Project;
+
+    int count = selection(Recent_project, Recent_publications, Profit, New_Project);
+
+    if (count > 3) {
+        cout << "\nCongratulations!! You qualified the selection criteria.\n";
+        cout << "Enter your salary: ";
+        cin >> salary;
+        increment = (salary * 20) / 100 + salary;
+        cout << "New salary after 20% increment: " << increment << endl;
+    } else {
+        cout << "\nSorry! You did not meet the selection criteria.\n";
+    }
+
+    return 0;
+}
